@@ -41,3 +41,9 @@ Before public launch, supply verified contact/office details, confirm the imager
 Checked at 1440px desktop, 768px tablet and 375px mobile using Chrome. Confirmed no horizontal overflow, missing images, broken internal anchors or browser console errors. Checked mobile navigation and Escape, required fields, valid enquiry download and legal notice anchors.
 
 `npm test` checks the shipped links/assets, metadata and configurable contact defaults. Browser checks can be run with `npm install --no-save playwright` then `node tests/browser.cjs` while the server is running. They use installed Google Chrome; set `CHROME_PATH` if it is elsewhere. Screenshots go to ignored `work/`.
+
+## GitHub Pages
+
+`.github/workflows/pages.yml` runs the tests and production build on pushes, pull requests and manual runs, then uploads `dist/` as a Pages artifact. Only the repository's default branch can deploy; pull requests and other branches build without publishing. The workflow follows the default branch automatically if it is renamed or changed.
+
+Pages must use **Settings → Pages → Build and deployment → Source: GitHub Actions**. Deployment appears in the `github-pages` environment. Relative asset URLs support both a project site such as `/website/` and a custom domain without rebuilding. No secrets or npm installation are required.
