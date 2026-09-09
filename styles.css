@@ -1,0 +1,177 @@
+:root{
+  --green:#0d5d39;
+  --green2:#174d39;
+  --navy:#102a43;
+  --text:#1d2a35;
+  --muted:#f4f7f7;
+  --line:#d9e2e7;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+.container{width:min(1180px,92%);margin:auto}
+.narrow{width:min(820px,92%);text-align:center}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.05;margin:0 0 14px;color:#11243a}
+h1{font-size:clamp(3rem,7vw,5.7rem);color:white;font-weight:600}
+h2{font-size:clamp(2.2rem,4vw,4rem)}
+h3{font-size:1.55rem}
+p{margin:0 0 18px}
+.eyebrow{
+  letter-spacing:.28em;
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--green);
+  text-transform:uppercase;
+}
+.light{color:#fff}
+.center{text-align:center}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.8rem 1.15rem;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.25s ease;
+}
+.btn-primary{background:var(--green);color:#fff;border:1px solid var(--green)}
+.btn-primary:hover{transform:translateY(-1px);background:#0a4c2e}
+.btn-ghost{border:1px solid rgba(255,255,255,.7);color:#fff}
+.btn-light{background:white;color:var(--navy)}
+.btn-outline{border:1px solid #1d6b9b;color:#125e8d}
+.site-header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid #e8ecef;
+}
+.nav-wrap{height:78px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:260px}
+.fern-mark{font-size:3rem;color:var(--green);transform:rotate(-25deg)}
+.brand-name{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:700;color:var(--green)}
+.brand-sub{font-size:.58rem;letter-spacing:.32em;color:#46676a}
+.nav{display:flex;align-items:center;gap:19px;margin-left:auto}
+.nav a{text-decoration:none;color:#152738;font-size:.9rem}
+.header-cta{white-space:nowrap}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem}
+.hero{
+  min-height:610px;
+  position:relative;
+  background:
+    linear-gradient(90deg,rgba(4,28,48,.8),rgba(4,28,48,.15)),
+    url("https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+  display:flex;
+  align-items:center;
+}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.2))}
+.hero-content{position:relative;color:white;max-width:920px;margin-left:4%}
+.hero h2{color:#fff;font-size:clamp(1.7rem,3vw,2.8rem);font-weight:500}
+.hero-copy{max-width:720px;font-size:1.1rem}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.value-strip{border-bottom:1px solid var(--line);background:#fff}
+.values{display:grid;grid-template-columns:repeat(4,1fr)}
+.value{padding:22px;text-align:center;border-right:1px solid var(--line)}
+.value:last-child{border-right:0}
+.value span{display:block;font-size:2rem}
+.value b{display:block;text-transform:uppercase;letter-spacing:.08em;color:#17324f}
+.value small{text-transform:uppercase;letter-spacing:.13em;color:#607889}
+.section{padding:82px 0}
+.intro p:last-child{font-size:1.08rem;color:#5a6670}
+.muted{background:var(--muted)}
+.section-title{text-align:center;margin-bottom:38px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e3e8eb;border-radius:8px;overflow:hidden;text-align:center;box-shadow:0 6px 18px rgba(15,40,58,.06)}
+.card p{font-size:.9rem;padding:0 13px 18px;color:#65717a}
+.card h3{font-size:1.28rem;margin:11px 10px 7px}
+.card-img{height:150px;background-position:center;background-size:cover}
+.honey{background-image:url("https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=700&q=80")}
+.food{background-image:url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80")}
+.water{background-image:url("https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=700&q=80")}
+.wine{background-image:url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80")}
+.trade{background-image:url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=700&q=80")}
+.ai{background-image:url("https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80")}
+.construction{background-image:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80")}
+.security{background-image:url("https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=80")}
+.import{background-image:url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=700&q=80")}
+.global{background-image:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80")}
+.split-section{display:grid;grid-template-columns:1.1fr .9fr}
+.vision-panel{
+  min-height:540px;position:relative;
+  background:url("https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1200&q=85") center/cover no-repeat;
+}
+.panel-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,43,70,.82),rgba(15,43,70,.45))}
+.panel-content{position:relative;color:white;padding:70px;max-width:680px}
+.panel-content h2{color:white}
+.partners-panel{padding:70px;background:#fff;text-align:center}
+.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:30px 0}
+.partner{padding:26px;border:1px solid var(--line);border-radius:8px}
+.partner-logo{font-family:"Cormorant Garamond",serif;font-size:1.9rem;font-weight:700;color:var(--green)}
+.partner-logo.aqua{color:#1374a8}
+.markets-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}
+.map-card{
+  min-height:360px;border-radius:12px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 70% 50%,rgba(35,125,92,.12),transparent 28%),
+    linear-gradient(#eef6f8,#f8fbfc);
+  border:1px solid #dce7ec;
+}
+.map-card:before{
+  content:"";
+  position:absolute;inset:35px;
+  background:
+   radial-gradient(circle at 10% 42%,#a7c7d6 0 4px,transparent 5px),
+   radial-gradient(circle at 42% 34%,#a7c7d6 0 4px,transparent 5px),
+   radial-gradient(circle at 56% 50%,#a7c7d6 0 4px,transparent 5px),
+   radial-gradient(circle at 74% 42%,#a7c7d6 0 4px,transparent 5px),
+   radial-gradient(circle at 84% 67%,#0d5d39 0 6px,transparent 7px);
+}
+.map-title{position:absolute;right:28px;top:28px;font-size:.78rem;letter-spacing:.18em;color:#174d39;font-weight:700}
+.dot{position:absolute;font-size:.72rem;color:#153047}
+.nz{right:7%;bottom:14%}.india{left:60%;top:48%}.eu{left:43%;top:27%}.me{left:53%;top:48%}.na{left:12%;top:34%}.asia{right:16%;top:35%}
+.contact{background:#0f3348;color:white}
+.contact-box{display:grid;grid-template-columns:1.4fr .8fr;gap:40px;align-items:center}
+.contact h2,.contact h3{color:#fff}
+.contact-card{background:rgba(255,255,255,.08);padding:30px;border-radius:12px;border:1px solid rgba(255,255,255,.2)}
+.contact-card a{display:block;color:#fff;text-decoration:none;margin-top:8px}
+footer{background:#092434;color:#cfe0e8;padding:45px 0 20px}
+footer strong{color:#fff}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;font-size:.85rem}
+
+@media(max-width:1050px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .nav{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}
+  .nav.open{display:flex}
+  .menu-btn{display:block;margin-left:auto}
+  .header-cta{display:none}
+  .brand{min-width:0}
+}
+@media(max-width:760px){
+  .hero{min-height:560px}
+  .hero-content{margin-left:0}
+  .values{grid-template-columns:1fr 1fr}
+  .value:nth-child(2){border-right:0}
+  .cards{grid-template-columns:1fr 1fr}
+  .split-section{grid-template-columns:1fr}
+  .panel-content,.partners-panel{padding:45px 24px}
+  .partner-grid{grid-template-columns:1fr}
+  .markets-grid,.contact-box,.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .brand-name{font-size:1.55rem}
+  .brand-sub{font-size:.46rem}
+  .fern-mark{font-size:2.4rem}
+  .cards{grid-template-columns:1fr}
+  .values{grid-template-columns:1fr}
+  .value{border-right:0;border-bottom:1px solid var(--line)}
+  .hero h1{font-size:3.3rem}
+}
